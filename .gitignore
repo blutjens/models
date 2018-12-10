@@ -1,3 +1,9 @@
+# Datasets
+research/deeplab/datasets/pascal_voc_seg
+crowdai_related/crowdai_data
+crowdai_related/crowdai_data_coco
+crowdai_related/crowdai_data_pascal
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
