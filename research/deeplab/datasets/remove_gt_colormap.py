@@ -72,6 +72,9 @@ def main(unused_argv):
                                        '*.' + FLAGS.segmentation_format))
   for annotation in annotations:
     raw_annotation = _remove_colormap(annotation)
+    print('annotation', annotation)
+    print('raw_annotation', raw_annotation)
+    
     filename = os.path.splitext(os.path.basename(annotation))[0]
     _save_annotation(raw_annotation,
                      os.path.join(

@@ -245,6 +245,8 @@ def main(unused_argv):
   dataset = segmentation_dataset.get_dataset(
       FLAGS.dataset, FLAGS.train_split, dataset_dir=FLAGS.dataset_dir)
 
+  print(dir(dataset))
+  print(dataset.num_samples)
   tf.gfile.MakeDirs(FLAGS.train_logdir)
   tf.logging.info('Training on %s set', FLAGS.train_split)
 

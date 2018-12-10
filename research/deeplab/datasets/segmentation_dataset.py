@@ -86,6 +86,15 @@ _CITYSCAPES_INFORMATION = DatasetDescriptor(
     ignore_label=255,
 )
 
+_CROWDAI_INFORMATION = DatasetDescriptor(
+    splits_to_sizes={
+        'train': 280741,
+        'val': 60317,
+    },
+    num_classes=21, # Actually = 2, but set to 21 to initialize with pascal_voc dataset
+    ignore_label=255,
+)
+
 _PASCAL_VOC_SEG_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
         'train': 1464,
@@ -113,6 +122,7 @@ _DATASETS_INFORMATION = {
     'cityscapes': _CITYSCAPES_INFORMATION,
     'pascal_voc_seg': _PASCAL_VOC_SEG_INFORMATION,
     'ade20k': _ADE20K_INFORMATION,
+    'crowdai': _CROWDAI_INFORMATION,
 }
 
 # Default file pattern of TFRecord of TensorFlow Example.
